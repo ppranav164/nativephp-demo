@@ -18,16 +18,12 @@ class NativeAppServiceProvider
     {
         Menu::new()
             ->appMenu()
-            ->submenu('NativePHP', Menu::new()
-                ->link('https://nativephp.com', 'Documentation')
-            )
-            ->submenu('Volt', Menu::new()
-            ->link('https://nativephp.com', 'Documentation')
-            )
-            ->register();
+            ->submenu('Larajobs', Menu::new()
+                ->link('https://larajobs.com', 'Documentation')
+        );
  
         Window::open()
-            ->width(800)
+            ->width(1200)
             ->height(800);
 
         /**
